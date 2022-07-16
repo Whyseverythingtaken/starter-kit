@@ -1,0 +1,28 @@
+Users:
+-   Users_Id
+-   First_name
+-   Last_name
+-   Phone_number
+-   Email-Address
+-   password
+-   Address
+-   city
+
+Booking
+-   Booking_Id
+-   PropertyID: Reference property
+-   UserID: Reference UserID
+-   StartDate
+-   EndDate
+
+Property
+-   PropertyID (PK)
+-   Address
+-   City
+-   Price
+-   Bathroom
+-   Rooms
+-   Receptions
+-   Description
+-   Images
+-   available
