@@ -1,0 +1,82 @@
+<!-- Navbar -->
+
+{{>navbar}}
+
+
+<div class="d-flex flex-column flex-md-row justify-content-evenly align-items-center trendy mx-auto h-75 ">
+
+  <form class="col-10 col-md-4">
+    <h2> Add a Haven </h2>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Address 1" aria-label="firstLineAddress"
+        id="firstLineAddress">
+    </div>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Address 2" aria-label="address-line-2" id="address-line-2">
+    </div>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Postcode" aria-label="postcode" id="postcode">
+    </div>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Locality" aria-label="locality" id="locality" required>
+    </div>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Country" aria-label="country" id="country">
+    </div>
+    <div class="row p-2">
+      <select class="form-select form-select-m " aria-label=".form-select-lg example" id="numberBeds">
+        <option selected>Number of bedrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+
+      </select>
+    </div>
+    <div class="row p-2">
+      <select class="form-select form-select-m " aria-label=".form-select-lg example" id="numberBaths">
+        <option selected>Number of bathrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Monthly Cost" aria-label="price" id="price">
+    </div>
+    <div class="row p-2">
+      <textarea name="textAreaProperty" id="textAreaProperty" rows="3" wrap="hard" placeholder="Description" ></textarea>
+
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="available" id="flexSwitchCheckChecked" checked>
+      <label class="form-check-label" for="flexSwitchCheckChecked">Available now?</label>
+    </div>
+    {{!--
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="available from?" aria-label="First name">
+    </div> --}}
+
+    <div class="row px-2 py-3">
+      <label class="form-check-label" for="customFile">Select your images</label>
+      <input type="file" class="form-control" id="customFile">
+    </div>
+    <a type="submit" class="btn btn-success" id="submitForm">Submit</a>
+  </form>
+
+  <!-- image container -->
+  <div class="col-4 d-md-flex align-items-center d-none">
+    <img class="w-75 "
+      src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/blue-door-in-a-yellow-house-gina-kelley.jpg"
+      alt="">
+  </div>
+
+
+</div>
+
+
+
+<!-- Footer -->
+{{>footer}}

@@ -1,0 +1,58 @@
+<!-- Navbar -->
+{{>navbar}}
+
+<div class="d-flex flex-row">
+    <div class="col-6">
+        <form class="offset-3 col-6">
+            <h2>Create an Account</h2>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="First Name" aria-label="First name"
+                    id="firstName-su" required />
+            </div>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name" id="lastName-su"
+                    required />
+            </div>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email-su" required />
+            </div>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="Password" aria-label="Password" minlength="8"
+                    id="password-su" required />
+            </div>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="address" aria-label="address" id="address-su"
+                    required />
+            </div>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="City" aria-label="City" id="city-su" required />
+            </div>
+
+            <button type="submit" class="btn btn-success" id="signUpButton" value="signUp">Send</button>
+        </form>
+    </div>
+
+    <!---second form  -->
+
+    <div class="col-6">
+        <form class="offset-3 col-6">
+            <h2>Login</h2>
+            <div class="row p-2">
+                <input type="text" class="form-control" placeholder="email" aria-label="email" id="loginEmailAddress"
+                    required />
+            </div>
+
+            <div class="row p-2">
+                <input type="xtext" class="form-control" placeholder="password" aria-label="password" id="logInPassword"
+                    required />
+            </div>
+
+
+            <button type="submit" class="btn btn-success" id="signInButton" value="signIn">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer -->
+{{>footer}}

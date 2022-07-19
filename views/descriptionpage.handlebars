@@ -1,0 +1,106 @@
+<!-- Navbar -->
+{{>navbar}}
+<!-- Back to results -->
+<div class='container-md pb-2 pt-4'>
+  <a class='text-black backToPage' href='javascript:history.back()'>
+    <i class='fa-solid fa-chevron-left'></i>
+    Back to search results</a>
+</div>
+
+<!-- Images  -->
+<div
+  class='container-md d-flex flex-md-row flex-column block-section justify-content-center align-items-center'
+>
+  <div
+    class='col d-flex flex-row justify-content-evenly align-content-center flex-wrap'
+  >
+  {{!-- Images from Db --}}
+  {{>descriptionPageImgs}}
+
+  </div>
+  <div class='col text-center d-block align-items-center'>
+    <div class='col-lg-10 col-sm-11 text-start mx-auto mb-5 fixed'>
+      <h2>{{properties.address}},  {{properties.city}}</h2>
+      <h3 class='my-sm-4'>£{{properties.price}}/moth</h3>
+      <div class='d-flex justify-content-start'>
+        <h5 class='px-3'>
+          <i class='fa-solid fa-bed'><span class='px-3'>{{properties.bathroom_number}}</span></i>bed
+        </h5>
+        <h5 class='px-3'>
+          <i class='fa-solid fa-toilet'><span class='px-3'>{{properties.rooms_number}}</span></i>Bath
+        </h5>
+        <h5 class='px-3'>
+          <i class='fa-solid fa-couch'><span class='px-3'>{{properties.rooms_number}}</span></i>reception
+        </h5>
+      </div>
+    </div>
+    <div
+      class='d-md-flex d-none flex-md-column align-items-center sticky-md-bottom'
+    >
+    {{#if logged}}
+     <button type='button' class='btn btn-warning col-sm-8 col-md-6 mb-3'>
+        {{properties.owner.email}}
+      </button>
+      <button type='button' class='btn btn-warning col-sm-8 col-md-6'>
+        {{properties.owner.first_name}}
+      </button>
+
+        {{else}}
+    <form class="d-flex flex-column flex-lg-row align-items-center">
+     <input
+        type="text"
+        class="form-control m-2"
+        id="startingDate"
+        placeholder="Start Date"
+      />
+      <input
+        type="text"
+        class="form-control  m-2"
+        id="endDate"
+        placeholder="End Date"
+      />
+      <button type="submit" class="btn btn-danger col-6 col-lg-2 " id="bookButton" value="bookButton">Send</button>
+
+    </form>
+          {{/if}}
+
+    </div>
+  </div>
+</div>
+<!-- Call to action buttons -->
+<div class='d-md-none sticky-sm-top text-center py-sm-2 bg-white'>
+  <button type='button' class='btn btn-warning col-11 mb-2'>Email</button>
+  <button type='button' class='btn btn-warning col-11'>Call</button>
+</div>
+<div class='d-md-none sticky-sm-top text-center py-sm-2 bg-white'>
+  <button type='button' class='btn btn-warning col-11 mb-2'>Email</button>
+  <button type='button' class='btn btn-warning col-11'>Call</button>
+</div>
+
+<!-- Description -->
+<div class='container-md text-center block-section'>
+  <div class='d-flex flex-column align-items-center'>
+    <header class='col-10 text-start'>
+      <h3>Description</h3>
+    </header>
+    <div
+      class='col-10 text-start shadow-sm px-4 pt-3 pb-3 rounded-2'
+      id='property-description'
+    >
+    <p>
+      {{properties.description}}
+    </p>
+    </div>
+    <h5 id='more' class='expand-description py-1'>Read more</h5>
+    <h5 id='less' class='decrease-description py-1'>Read less</h5>
+  </div>
+</div>
+<!-- Maps -->
+<div class='container-md block-section'>
+  <header class='text-lg-start col-10 mx-auto'>
+    <h3>Location</h3>
+  </header>
+  <div class='block-section mx-auto col-10' id='map'></div>
+</div>
+<!-- Footer -->
+{{>footer}}

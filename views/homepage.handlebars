@@ -1,1 +1,66 @@
-<h2>Welcome to Starter Kit</h2>
+<!-- Navbar -->
+{{>navbar}}
+
+<div class="moving">
+  
+  <div class="hero ">    <svg viewBox='0 0 1440 120' class='wave'>
+      <path
+        d='M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z'
+      ></path>
+    </svg></div>
+  <div class=' hero-2 d-flex flex-column justify-content-center .moving'>
+    <h1 class='text-center text-white fw-semibold'>Your Next Place...</h1>
+    <div class='row align-items-center pb-9 col-12'>
+      <div class='col-lg-6 mx-auto'>
+        <div class='input-group'>
+          <input type='text' class='form-control' placeholder='Search for...' />
+          <span class='input-group-btn'>
+            <button class='btn btn-secondary' type='button'>Go!</button>
+          </span>
+        </div>
+      </div>
+    </div>
+<!--    <svg viewBox='0 0 1440 120' class='wave'>
+      <path
+        d='M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z'
+      ></path>
+    </svg>-->
+  </div>
+</div>
+<!-- Row 1 -->
+<div class='col-11 mx-auto block-section-1'>
+  <h3 class='text-center mb-2'>Trendy Places</h3>
+  <div
+    class='d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap'
+  >
+       {{>trendyPlaces}}
+
+  </div>
+</div>
+
+<!-- Row 2 -->
+<div class='col-11 mx-auto block-section-1'>
+  <h3 class='text-center mb-2'>Low Cost Options</h3>
+  <div
+    class='d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap'
+  >
+    {{>lowCostPlaces}}
+    
+  </div>
+</div>
+
+<!-- Row 3 -->
+
+<div class='col-11 mx-auto block-section'>
+  <h3 class='text-center mb-2'>All Year Around</h3>
+  <div
+    class='d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap'
+  >
+        {{>trendyPlaces}}
+
+  </div>
+</div>
+
+<!-- Footer -->
+
+{{>footer}}
