@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/c6e9c752f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="./jquery-ui.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-warning justify-content-between"
+    >
+      <h5 class="my-0 mr-md-auto font-weight-normal">STAYHAVEN</h5>
+
+      <nav class="my-2 my-md-0 mr-md-3 d-flex">
+        <a class="p-2 text-dark btn btn-warning" href="">Add Listing</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-warning dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            My Account
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item bg-light" href="#">Bookmarks</a></li>
+            <li><a class="dropdown-item bg-light" href="#">Sign-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Back to results -->
+    <div class="container-md pb-2">
+      <a class="text-black backToPage" href="/">
+        <i class="fa-solid fa-chevron-left"></i> Back to search results</a
+      >
+    </div>
+
+    <!-- Images  -->
+    <div
+      class="container-md d-flex flex-md-row flex-column block-section justify-content-center align-items-center"
+    >
+      <div
+        class="col d-flex flex-row justify-content-evenly align-content-center flex-wrap"
+      >
+        <img
+          src="https://res.cloudinary.com/dooyigunm/image/upload/v1657650966/StayHaven/selly-oak-3/walsall_1_drnd00.jpg"
+          alt=""
+          class="col-6"
+        />
+        <img
+          src="https://res.cloudinary.com/dooyigunm/image/upload/v1657650966/StayHaven/selly-oak-3/2_xy39ye.jpg"
+          alt=""
+          class="col-6"
+        />
+        <img
+          src="https://res.cloudinary.com/dooyigunm/image/upload/v1657650965/StayHaven/selly-oak-3/3_quh3js.jpg"
+          alt=""
+          class="col-6"
+        />
+        <img
+          src="https://res.cloudinary.com/dooyigunm/image/upload/v1657650965/StayHaven/selly-oak-3/5_j2nyk4.jpg"
+          alt=""
+          class="col-6"
+        />
+      </div>
+      <div class="col text-center d-block align-items-center">
+        <div class="col-lg-10 col-sm-11 text-start mx-auto mb-5 fixed">
+          <h2>Location</h2>
+          <h3 class="my-sm-4">Price per week</h3>
+          <div class="d-flex justify-content-start">
+            <h5 class="px-3">
+              <i class="fa-solid fa-bed"><span class="px-3">3</span></i
+              >bed
+            </h5>
+            <h5 class="px-3">
+              <i class="fa-solid fa-toilet"><span class="px-3">3</span></i
+              >Bath
+            </h5>
+            <h5 class="px-3">
+              <i class="fa-solid fa-couch"><span class="px-3">1</span></i
+              >reception
+            </h5>
+          </div>
+        </div>
+        <div
+          class="d-md-flex d-none flex-md-column align-items-center sticky-md-bottom"
+        >
+          <button type="button" class="btn btn-warning col-sm-8 col-md-6 mb-3">
+            Email1
+          </button>
+          <button type="button" class="btn btn-warning col-sm-8 col-md-6">
+            Call1
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Call to action buttons -->
+    <div class="d-md-none sticky-sm-top text-center py-sm-2 bg-white">
+      <button type="button" class="btn btn-warning col-11 mb-2">Email</button>
+      <button type="button" class="btn btn-warning col-11">Call</button>
+    </div>
+    <div class="d-md-none sticky-sm-top text-center py-sm-2 bg-white">
+      <button type="button" class="btn btn-warning col-11 mb-2">Email</button>
+      <button type="button" class="btn btn-warning col-11">Call</button>
+    </div>
+
+    <!-- Description -->
+    <div class="container-md text-center block-section">
+      <div class="d-flex flex-column align-items-center">
+        <header class="col-10 text-start">
+          <h3>Description</h3>
+        </header>
+        <div
+          class="col-10 text-start shadow-sm px-4 pt-3 pb-3 rounded-2"
+          id="property-description"
+        >
+          <p>
+            Profectus Estates are proud to present this newly constructed one
+            bedroom self contained first floor flat located on Jerry's Lane in
+            the popular area of Erdington. Within walking distance to Erdington
+            train station and less than 10 minutes by car to the city centre
+            this property is ideal for working professionals.The premises itself
+            used to be the old Jerry's Inn public house and now has undergone a
+            tremendous refurbishment and hence now is offering luxury self
+            contained accommodation.
+          </p>
+
+          <br />
+          <p>
+            Profectus Estates are proud to present this newly constructed one
+            bedroom self contained first floor flat located on Jerry's Lane in
+            the popular area of Erdington. Within walking distance to Erdington
+            train station and less than 10 minutes by car to the city centre
+            this property is ideal for working professionals.The premises itself
+            used to be the old Jerry's Inn public house and now has undergone a
+            tremendous refurbishment and hence now is offering luxury self
+            contained accommodation.
+          </p>
+          <br />
+          <p>
+            Profectus Estates are proud to present this newly constructed one
+            bedroom self contained first floor flat located on Jerry's Lane in
+            the popular area of Erdington. Within walking distance to Erdington
+            train station and less than 10 minutes by car to the city centre
+            this property is ideal for working professionals.The premises itself
+            used to be the old Jerry's Inn public house and now has undergone a
+            tremendous refurbishment and hence now is offering luxury self
+            contained accommodation.
+          </p>
+          <br />
+          <p>
+            Profectus Estates are proud to present this newly constructed one
+            bedroom self contained first floor flat located on Jerry's Lane in
+            the popular area of Erdington. Within walking distance to Erdington
+            train station and less than 10 minutes by car to the city centre
+            this property is ideal for working professionals.The premises itself
+            used to be the old Jerry's Inn public house and now has undergone a
+            tremendous refurbishment and hence now is offering luxury self
+            contained accommodation.
+          </p>
+        </div>
+        <h5 id="more" class="expand-description py-1">Read more</h5>
+        <h5 id="less" class="decrease-description py-1">Read less</h5>
+      </div>
+    </div>
+    <!-- Maps -->
+    <div class="container-md block-section">
+      <header class="text-lg-start col-10 mx-auto">
+        <h3>Location</h3>
+      </header>
+      <div class="block-section mx-auto col-10" id="map"></div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 bg-warning justify-content-between"
+      style="margin-top: 5rem"
+    >
+      <h5 class="my-0 mr-md-auto font-weight-normal">© Copyright</h5>
+
+      <div class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark btn btn-warning" href="">Contact Us</a>
+      </div>
+    </footer>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARmkjSXxUaA1zlQOgV9mNy41KlJbRlqh8&callback=initMap&libraries=places"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
