@@ -17,7 +17,7 @@ Booking.init(
       allowNull: false,
       references: {
         model: 'property',
-        key: 'property_id',
+        key: 'id',
       },
     },
     user_id: {
@@ -25,7 +25,7 @@ Booking.init(
       allowNull: false,
       references: {
         model: 'user',
-        key: 'user_id',
+        key: 'id',
       },
     },
     starting_date: {

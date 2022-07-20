@@ -26,3 +26,10 @@ Property
 -   Description
 -   Images
 -   available
+
+Bookmarks
+-   id 
+-   UserID
+-   PropertyID
+
+
