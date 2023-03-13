@@ -1,0 +1,23 @@
+{{#each searchPropertyBy}}
+  <div
+    class='property-card card col-sm-12 col-md-5 col-lg-2 m-3 augmentate-1'
+    href='/about-property/{{id}}'
+    property-id='{{id}}'
+  >
+    {{#if ../logged}}
+      <div class='bookmark-icon'><i class='fa-solid fa-heart'></i></div>
+    {{/if}}
+    <a href='/about-property/{{id}}'>
+      <img
+        class='card-img-top'
+        src='https://source.unsplash.com/random/1080x720/?house&{{@index}}1'
+        alt='Card image cap'
+      />
+      <div class='d-flex flex-column p-2'>
+        <li class='list-unstyled'>{{city}}, {{address}} </li>
+        <li class='ms-auto list-unstyled'>£ {{price}} p/m</li>
+      </div>
+    </a>
+
+  </div>
+{{/each}}

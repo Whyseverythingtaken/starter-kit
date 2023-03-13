@@ -1,0 +1,91 @@
+<!-- Navbar -->
+
+{{>navbar}}
+
+
+<div class="d-flex flex-column flex-md-row justify-content-evenly align-items-center trendy mx-auto h-75 ">
+
+  <form class="col-10 col-md-4" id="newProperty">
+    <h2> Add a Haven </h2>
+    <div class="row p-2">
+      <input type="text" name="address" class="form-control" placeholder="Address 1" aria-label="firstLineAddress"
+        id="firstLineAddress">
+    </div>
+    <div class="row p-2">
+      <input type="text" class="form-control" placeholder="Address 2" aria-label="address-line-2" id="address-line-2">
+    </div>
+    <div class="row p-2">
+      <input type="text" name="postcode" class="form-control" placeholder="Postcode" aria-label="postcode"
+        id="postcode">
+    </div>
+    <div class="row p-2">
+      <input type="text" name="city" class="form-control" placeholder="Locality" aria-label="locality" id="locality"
+        required>
+    </div>
+    <div class="row p-2">
+      <input type="text" name="country" class="form-control" placeholder="Country" aria-label="country" id="country">
+    </div>
+    <div class="row p-2">
+      <select name="rooms_number" class="form-select form-select-m " aria-label=".form-select-lg example"
+        id="numberBeds">
+        <option selected>Number of bedrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+
+      </select>
+    </div>
+    <div class="row p-2">
+      <select name="bathroom_number" class="form-select form-select-m " aria-label=".form-select-lg example"
+        id="numberBaths">
+        <option selected>Number of bathrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="row p-2">
+      <input name="price" type="text" class="form-control" placeholder="Monthly Cost" aria-label="price" id="price">
+    </div>
+    <div class="row p-2">
+      <textarea name="description" id="textAreaProperty" rows="3" wrap="hard" placeholder="Description"></textarea>
+
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="available" id="flexSwitchCheckChecked"
+      >
+      <label class="form-check-label" for="flexSwitchCheckChecked">Available now?</label>
+    </div>
+
+    <div class="row p-2">
+      <input name="image1"  type="text" class="form-control" placeholder="Image" aria-label="image" id="image1">
+    </div>
+    <div class="row p-2">
+      <input name="image2" type="text" class="form-control" placeholder="Image" aria-label="image" id="image2">
+    </div>
+    <div class="row p-2">
+      <input name="image3" type="text" class="form-control" placeholder="Image" aria-label="image" id="image3">
+    </div>
+    <div class="row p-2">
+      <input name="image4" type="text" class="form-control" placeholder="Image" aria-label="image" id="image4">
+    </div>
+    <button type="submit" class="btn btn-success" id="submitForm">Submit</button>
+  </form>
+
+  <!-- image container -->
+  <div class="col-4 d-md-flex align-items-center d-none">
+    <img class="w-75 "
+      src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/blue-door-in-a-yellow-house-gina-kelley.jpg"
+      alt="">
+  </div>
+
+
+</div>
+
+
+
+<!-- Footer -->
+{{>footer}}

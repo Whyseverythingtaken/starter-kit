@@ -1,0 +1,68 @@
+[
+  {
+    "property_id": 1,
+    "user_id": 1,
+    "starting_date": "2022-08-06",
+    "end_date": "2022-09-06"
+  },
+  {
+    "property_id": 1,
+    "user_id": 2,
+    "starting_date": "2022-09-10",
+    "end_date": "2022-10-20"
+  },
+  {
+    "property_id": 2,
+    "user_id": 3,
+    "starting_date": "2022-08-08",
+    "end_date": "2022-10-08"
+  },
+  {
+    "property_id": 3,
+    "user_id": 4,
+    "starting_date": "2022-09-22",
+    "end_date": "2022-10-13"
+  },
+  {
+    "property_id": 3,
+    "user_id": 5,
+    "starting_date": "2022-10-14",
+    "end_date": "2022-11-14"
+  },
+  {
+    "property_id": 4,
+    "user_id": 6,
+    "starting_date": "2022-08-02",
+    "end_date": "2022-10-02"
+  },
+  {
+    "property_id": 5,
+    "user_id": 7,
+    "starting_date": "2022-10-06",
+    "end_date": "2022-11-06"
+  },
+  {
+    "property_id": 5,
+    "user_id": 8,
+    "starting_date": "2022-11-07",
+    "end_date": "2022-12-07"
+  },
+  {
+    "property_id": 6,
+    "user_id": 1,
+    "starting_date": "2022-09-07",
+    "end_date": "2022-10-07"
+  },
+  {
+    "property_id": 7,
+    "user_id": 8,
+    "starting_date": "2022-09-10",
+    "end_date": "2022-11-06"
+  },
+  {
+    "property_id": 8,
+    "user_id": 9,
+    "starting_date": "2022-12-01",
+    "end_date": "2022-12-25"
+  }
+]

@@ -1,0 +1,65 @@
+<!-- Navbar -->
+{{>navbar}}
+
+<div class="d-flex flex-row justify-content-center align-items-evenly mt-5" style="">
+    <div class="fullscreen-bg">
+      <video loop muted autoplay class="fullscreen-bg_video">
+        <source src="/css/backgroundvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="shadow-video"></div>
+    </div>
+
+    <div class="card bg-light bg-opacity-75 p-4 mx-5 col-3">
+        <form class=" col-9 mx-auto" id="signUpForm">
+            <h2>Create an Account</h2>
+            <div class="row p-2">
+                <input type="text" name="first_name" class="form-control" placeholder="First Name" aria-label="First name"
+                    id="firstName-su" required />
+            </div>
+            <div class="row p-2">
+                <input type="text" name="last_name"  class="form-control" placeholder="Last Name" aria-label="Last name"
+                    required />
+            </div>
+            <div class="row p-2">
+                <input type="email" name="email"  class="form-control" placeholder="Email" aria-label="Email" required />
+            </div>
+            <div class="row p-2">
+                <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" minlength="8"
+                    required />
+            </div>
+            <div class="row p-2">
+                <input type="text" name="address" class="form-control" placeholder="address" aria-label="address" 
+                    required />
+            </div>
+            <div class="row p-2">
+                <input type="text" name="city"  class="form-control" placeholder="City" aria-label="City" required />
+            </div>
+
+            <button type="submit" class="btn btn-success" value="signUp">Send</button>
+        </form>
+    </div>
+
+    <!---second form  -->
+    <div class="card bg-light bg-opacity-75  p-4 col-3">
+        <form class=" col-9 mx-auto" id="signInForm">
+            <h2>Login</h2>
+            <div class="row p-2">
+                <input type="text"         name="email"
+ class="form-control" placeholder="email" aria-label="email" id="loginEmailAddress"
+                    required />
+            </div>
+
+            <div class="row p-2">
+                <input type="text" name="password" class="form-control" placeholder="password" aria-label="password" id="logInPassword"
+                    required />
+            </div>
+
+
+            <button type="submit" class="btn btn-success" id="signInButton" value="signIn">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer -->
+{{>footer}}

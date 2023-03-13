@@ -1,0 +1,122 @@
+<!-- Navbar -->
+
+{{>navbar}}
+
+
+<!-- Main container -->
+<div class="container-fluid my-2 trendy">
+  <div class="row">
+    <div class="col-4 my-5 text-center">
+      <!-- User profile info here -->
+      <div class="my-5">
+        <img src="../img/profilepic.jpg" class="img-fluid rounded-circle" alt="profile picture" />
+      </div>
+      <h5>{{userProfileData.first_name}} {{user.last_name}} </h5>
+      <h5>{{userProfileData.email}} </h5>
+      <h5>{{userProfileData.address}} </h5>
+      <h5>{{userProfileData.city}}</h5>
+      <!-- Update account info link (opens modal) -->
+      <div class="my-4">
+        <a class="update-account-btn" data-bs-toggle="modal" data-bs-target="#updateAccountInfo" href="">Update Account
+          Info</a>
+      </div>
+    </div>
+    <!-- End of User profile content -->
+
+    <!-- Update Account Info Modal -->
+    <div class="modal fade" id="updateAccountInfo" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Update Account Info</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="fname">First name:</label><br />
+              <input type="text" id="fname" name="fname" /><br />
+              <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" /><br />
+              <label for="email">Email:</label><br />
+              <input type="text" id="email" name="email" /><br />
+              <label for="address">Address:</label><br />
+              <input type="text" id="address" name="address" /><br />
+              <label for="city">City:</label><br />
+              <input type="text" id="city" name="city" /><br /><br />
+              <label for="password">Password:</label><br />
+              <input type="text" id="password" name="password" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Update Account Info Modal -->
+
+    <div class="col-8">
+      <div class="row">
+        <!-- My Listings -->
+        <div class="col-12 mx-auto mt-5 block-section-1 col-12 border-bottom">
+          <h3 class="text-left m-4" data-bs-toggle="collapse" data-bs-target="#myListing" aria-expanded="false"
+            aria-controls="myListing">My Listings</h3>
+          <div class="collapse" id="myListing">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
+
+              {{>prifileBookmark}}
+            </div>
+
+
+          </div>
+        </div>
+        <!-- Upcoming Bookings -->
+        <div class="col-12  block-section-1 border-bottom">
+          <h3 class="text-left m-4" data-bs-toggle="collapse" data-bs-target="#Bookings" aria-expanded="false"
+            aria-controls="Bookings">Upcoming Bookings</h3>
+          <div class="collapse" id="Bookings">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
+
+              {{>prifileBookmark}}
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Previous Bookings -->
+        <div class="col-12 block-section-1 border-bottom">
+          <h3 class="text-left m-4" data-bs-toggle="collapse" data-bs-target="#pBookings" aria-expanded="false"
+            aria-controls="pBookings">Previous Bookings</h3>
+          <div class="collapse" id="pBookings">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
+              {{>prifileBookmark}}
+            </div>
+
+          </div>
+        </div>
+        <!-- Bookmarks -->
+        <div class="col-12 mx-auto block-section-1 border-bottom" id="bookmarks">
+          <h3 class="text-left m-4" data-bs-toggle="collapse" data-bs-target="#bookmarksCards" aria-expanded="false"
+            aria-controls="bookmarksCards">
+            <i class="fa-regular fa-heart"></i> Bookmarks
+          </h3>
+          <div class="collapse" id="bookmarksCards">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
+              {{>prifileBookmark}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+{{>footer}}
